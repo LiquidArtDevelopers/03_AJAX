@@ -45,8 +45,7 @@ section, h1{
 #contenedor01{
     width: 100%;
     min-height: 300px;
-    padding: 1rem;        
-    background-color: var(--color02);    
+    padding: 1rem;      
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,4 +63,37 @@ section, h1{
     font-family: var(--fuente00);
     font-size: 3rem;
     color: var(--color01);
+}
+
+table{
+    width: 100%;
+    border: none;
+}
+th, td{
+    border: none;
+    padding: 0.5rem 1rem;
+}
+table >:nth-child(even){
+    background-color: var(--color02);
+}
+.contenedorBotones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.contenedor-tabla{
+    position: relative;
+    height: 50px;
+
+    table thead{
+        position: sticky;
+    }
+    tbody{
+        overflow-y: scroll ;
+    }
+
 }
